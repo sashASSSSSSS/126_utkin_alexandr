@@ -3,7 +3,7 @@ public class Task_1 implements Task_1_base {
     public int subtask_1_if(int first, int second, int third) {
         // Вычислить и вернуть минимальный из трех полученных аргументов (first, second, third)
         // ------------------------------------------------------------------------------------
-        return 0; // Замените данный оператор кодом, решающим поставленную задачу.
+        return 0; // 
     }
     @Override
     public boolean subtask_2_if(int year) {
