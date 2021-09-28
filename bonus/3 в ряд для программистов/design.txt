@@ -1,4 +1,16 @@
 "3 в ряд для программиста"
 Головоломка
-происходит в реальном времени, нужно менять символы между собой, чтобы он исчезли и вы получили очки.
-игры, которые вдохновили:"Homescapes"
+происходит в реальном времени, нужно менять символы между собой, 	чтобы он исчезли и вы получили очки.
+игрa, которые вдохновили:"Homescapes"
+
+
+
+"3 in a row for a programmer"
+
+ puzzle takes
+
+
+the game is played in real time, you need to change the figures between each other so that it disappears and you get points.
+
+
+Game which inspired me: "Homescapes"
