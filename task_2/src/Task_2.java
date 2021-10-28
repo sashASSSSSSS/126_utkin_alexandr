@@ -40,18 +40,24 @@ public class Task_2 implements Task_2_base {
 
     @Override
     public int subtask_4_while(int start, int end) {
-        if (start==end){
+        if (start == end) {
             return 0;
         }
-        if (end>start){
-            return end-start;
+
+
+        if(end%2==1){
+            return 1+ subtask_4_while(start, end+1);
         }
-        if (start%2==1){
-            return 1 + subtask_4_while(end, start-1);
+        if(start%2==1){
+            return 1 + subtask_4_while(start-1, end);
         }
-        else {
-            return 1 + subtask_4_while(end, start/2);
+        else if (start/2>=end){
+            return 1 + subtask_4_while(start/2, end);
         }
+        else{
+            return 1 + subtask_4_while(start-1, end);
+        }
+
         // Вычислить, за какое минимальное число операций
         // вычесть 1
         // поделить на 2
