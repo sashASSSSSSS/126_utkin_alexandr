@@ -2,6 +2,11 @@ public class Task_3 implements Task_3_base {
     @Override
     public int subtask_1_for(int n1, int n2, int a, int b) {
         int k =0;
+        int h = n2;
+        if(n2<n1){
+            n2=n1;
+            n1=h;
+        }
         for(int i = n1; i<=n2 ;i++) {
             if((i%a==0)&(i%b!=0)){
                 k++;
@@ -40,24 +45,27 @@ public class Task_3 implements Task_3_base {
 
     @Override
     public int subtask_3_for(int num, int d, int cnt) {
-        int k = 0;  //сумма
+        /*int k = 0;  //сумма
         int n=num;  // n-ный член
+        */
+        int k=0 ;
         if (cnt == 0) {
+            k=num;
             return num;
         }
-        /*else {
-            return  subtask_3_for(num, d, (cnt-1)) * d + 1;
+        else {
+            return  k + subtask_3_for(num, d, (cnt-1)) * d + 1;
         }
-        */
-        for(int i =1;i<=cnt-1; i++){
-            n=n*d+1;
-            k=k+n;
-        }
+        int s = (num+b)*cnt/2;
+
+
+
+
         // Дана последовательность
         // a(0) = num
         // a(n) = a(n - 1) * d + 1
         // Найти сумму первых cnt элементов последовательности
-        return k;
+
     }
 
     @Override
