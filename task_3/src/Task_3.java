@@ -56,7 +56,7 @@ public class Task_3 implements Task_3_base {
         else {
             return  k + subtask_3_for(num, d, (cnt-1)) * d + 1;
         }
-        int s = (num+b)*cnt/2;
+
 
 
 
