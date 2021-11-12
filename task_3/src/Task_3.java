@@ -45,10 +45,20 @@ public class Task_3 implements Task_3_base {
 
     @Override
     public int subtask_3_for(int num, int d, int cnt) {
+        int[] ff= new int[cnt];
+        ff[0]=num;
+        for(int i =1; i<cnt;i++){
+            ff[i]=ff[i-1]*d +1;
+        }
+        int s = 0;
+        for(int j = 0; j<cnt; j++){
+            s+=ff[j];
+        }
+
         /*int k = 0;  //сумма
         int n=num;  // n-ный член
         */
-        int k=0 ;
+        /*int k ;
         if (cnt == 0) {
             k=num;
             return num;
@@ -56,7 +66,7 @@ public class Task_3 implements Task_3_base {
         else {
             return  k + subtask_3_for(num, d, (cnt-1)) * d + 1;
         }
-
+        */
 
 
 
@@ -65,7 +75,7 @@ public class Task_3 implements Task_3_base {
         // a(0) = num
         // a(n) = a(n - 1) * d + 1
         // Найти сумму первых cnt элементов последовательности
-
+        return s;
     }
 
     @Override
